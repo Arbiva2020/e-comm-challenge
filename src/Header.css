@@ -1,0 +1,70 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  position: sticky; /*header always showes on top*/
+  top: 0;
+  z-index: 100; /* property specifies the stack order of an element*/
+}
+
+.header__logo {
+  width: 100px;
+  object-fit: contain; /*keep aspect ratio*/
+  margin: 0 20px;
+  margin-top: 18px;
+}
+
+.header__search {
+  display: flex;
+  flex: 1; /*flex of 1 strechs it as big as it can go*/
+  align-items: center;
+  border-radius: 24px;
+}
+.header__searchIcon {
+  padding: 5px;
+  height: 22px !important;
+  background-color: #cd9042;
+}
+
+.header__searchInput {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+
+.header__nav {
+  /*holds all menues*/
+  display: flex;
+  justify-content: space-evenly; /* items are evenly distributed*/
+}
+.header__option {
+  /*holds each option in the nave, which is a pair of words with different style */
+  color: white;
+  display: flex;
+  flex-direction: column; /*The flex-direction CSS property sets how flex items are placed in the flex container. column means that one is above the other*/
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.optionLineOne {
+  font-size: 10px;
+}
+
+.optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* attention: the next two classes are under the same className of one div only*/
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.header__basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+}
